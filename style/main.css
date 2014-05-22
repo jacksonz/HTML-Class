@@ -1,0 +1,29 @@
+body{
+	background-color:#FFBA3F;
+	font-size:12pt;
+	width: 800px;
+	margin: auto;
+}
+p{
+	color:#15009D;
+}
+img{
+	box-shadow: 5px 5px 5px #694C19;
+	border: solid 1px #002280;
+	margin:10px;
+}
+#menu{
+	float:right;
+	border: 1px solid orange;
+	margin: 20px;
+	padding:10px;
+}
+#menu ul{
+	list-style-image: url("../images/paw.png");
+}
+#menu li:hover{
+	list-style-image: url("../images/paw-on.png");
+}
+#menu li a:hover, #menu li:hover a{
+	color:#fff; 
+}

@@ -10,40 +10,50 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
 
-alert("you are about to learn about dog diet!");
-var myVariable = true;
-function myFunction() {
-	var messageVariable;
-	if (myVariable == true) {
-		messageVariable = "A sick dog is a sad dog";
-		myVariable = false;
-	}else{
-		messageVariable = "A healthy dog is a happy dog!";
-		myVariable = true;
-	}
-    document.getElementById("demo").innerHTML = messageVariable;
+	alert("you are about to learn about dog diet!");
+	var myVariable = true;
+	function myFunction() {
+		var messageVariable;
+		if (myVariable == true) {
+			messageVariable = "A sick dog is a sad dog";
+			myVariable = false;
+		}else{
+			messageVariable = "A healthy dog is a happy dog!";
+			myVariable = true;
+		}
+	    document.getElementById("demo").innerHTML = messageVariable;
 	
-}
+	}
 
-var width = $(window).width() - 127;
-var height = $(window).height() - 111;
+	var width = $(window).width() - 127;
+	var height = $(window).height() - 111;
 
-function run() {
-    var top = Math.random() * height;
-    var left = Math.random() * width;
-    $('#myButton').css('top', top + 'px').css('left', left + 'px');
-}
+	function run() {
+	    var top = Math.random() * height;
+	    var left = Math.random() * width;
+	    $('#myButton').css('top', top + 'px').css('left', left + 'px');
+	}
 
-$(document).ready(function() {
-    $('#myButton').mouseover(run);
-    $('#myButton').mousemove(run);
-alert('hi');
-});
+	$(document).ready(function() {
+	    $('#myButton').mouseover(run);
+	    $('#myButton').mousemove(run);
+
+	});
 
 
-</script>
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 <body>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li> 
+			<li><a href="dog-diet.html">Diet</a></li>
+			<li><a href="dog-exercise.html">Exercise</a></li>
+			<li><a href="dog-health.html">Health</a></li>
+			<li><a href="dog-home-environment.html">Environment</a></li>
+		</ul>
+	</div>
 <p id="demo">Dog's need to watch what they eat, too</p>
 <button id="myButton" onclick="myFunction()" style="position:absolute">click Me for $1,000,000</button>
 </body>
