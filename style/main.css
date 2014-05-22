@@ -1,22 +1,28 @@
 body{
 	background-color:#FFBA3F;
-	font-size:12pt;
+	font-size:13pt;
 	width: 800px;
 	margin: auto;
+	color:black;
+	font-family:tahoma;
+}
+h1{
+	text-shadow: 4px 4px 3px #b80;
 }
 p{
-	color:#15009D;
+	color:#420;
 }
 img{
 	box-shadow: 5px 5px 5px #694C19;
 	border: solid 1px #002280;
 	margin:10px;
 }
+a:visited{color:#C104BF;}
 #menu{
 	float:right;
 	border: 1px solid orange;
 	margin: 20px;
-	padding:10px;
+	padding:10px;	
 }
 #menu ul{
 	list-style-image: url("../images/paw.png");
@@ -26,4 +32,22 @@ img{
 }
 #menu li a:hover, #menu li:hover a{
 	color:#fff; 
+}
+#menu li.current{
+	list-style-image: url("../images/paw-current.png");
+}
+#menu li.current a{
+	color:#00cc00;
+}
+.quote{
+	padding-left:40px;
+	min-height:140px;
+	background:url("../images/quote-symbol.png") no-repeat;
+	font-family:georgia;
+	color:#555;
+}
+.quote a{
+	font-family:tahoma;
+	font-size:.8em;
+	color:#000080;
 }

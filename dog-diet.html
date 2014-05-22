@@ -2,23 +2,36 @@
    "http://www.w3.org/TR/html4/strict.dtd">
 
 <html lang="en">
+
+<!-- 
+NOTES!
+
+topics related to dog diet
+
+- Table scraps
+- Foods a dog should never eat
+- Why do dogs eat grass
+
+
+-->
 <head>
 	<title>dog-diet</title>
 	<meta name="author" content="Jackson Zarse">
 	<!-- Date: 2014-05-01 -->
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="javascript/jquery-1.11.1.min.js"></script>
+	<script src="javascript/global.js"></script>
     <script>
 
-	alert("you are about to learn about dog diet!");
+	//alert("you are about to learn about dog diet!");
 	var myVariable = true;
 	function myFunction() {
 		var messageVariable;
 		if (myVariable == true) {
-			messageVariable = "A sick dog is a sad dog";
+			messageVariable = "A sick dog is a sad dog. ):";
 			myVariable = false;
 		}else{
-			messageVariable = "A healthy dog is a happy dog!";
+			messageVariable = "A healthy dog is a happy dog! (:";
 			myVariable = true;
 		}
 	    document.getElementById("demo").innerHTML = messageVariable;
@@ -37,6 +50,8 @@
 	$(document).ready(function() {
 	    $('#myButton').mouseover(run);
 	    $('#myButton').mousemove(run);
+		$('#myButton').hide();
+	
 
 	});
 
@@ -47,14 +62,24 @@
 <body>
 	<div id="menu">
 		<ul>
-			<li><a href="index.html">Home</a></li> 
+			<li>
+				<a href="index.html">Home</a>
+			</li> 
 			<li><a href="dog-diet.html">Diet</a></li>
 			<li><a href="dog-exercise.html">Exercise</a></li>
 			<li><a href="dog-health.html">Health</a></li>
 			<li><a href="dog-home-environment.html">Environment</a></li>
 		</ul>
 	</div>
-<p id="demo">Dog's need to watch what they eat, too</p>
-<button id="myButton" onclick="myFunction()" style="position:absolute">click Me for $1,000,000</button>
+	<h1>What should your dog eat?</h1>
+	<p id="demo">Dog's need to watch what they eat, too!</p>
+	<p>Like humans, dogs need protein, vitamins and minerals, and energy from carbs and fat.  "<em>Experts</em>" don't always agree as to exactly what kinds of foods are needed to meet a dog's nutritional needs.  Some people feel that dogs have adapted to <a href="http://www.the-scientist.com/?articles.view/articleNo/34095/title/Dogs-Adapted-to-Agriculture/">eating our garbage</a>!  Others feel that dogs haven't really changed that much from their wolf ancestors.  Either way, providing a high-quality kibble is going to be very nutritious and healthy for your dog and safe for your family.  Your vet can help you choose a reliable brand.</p>
+	<h2>Choosing a Kibble</h2>
+	<p>Unfortunately, many inexpensive dog foods are more <a href="http://www.dailymail.co.uk/news/article-2546512/How-pet-food-killing-dog-feeding-parsnips-yoghurt.html">filler and junk</a> than food.  Read the crude nutrition profile on the bag and find one with lots of protein and enough but not too much fat.  Avoid synthetic additives such as artificial flavors and colors.  Dogs are not able to digest grains.  These are used to bulk up food so that it fills a bigger bag.  Keep this in mind when comparing the price of one food to another.  They don't measure up pound for pound.  What goes in will come out so keep in mind what you might be getting yourself into.  </p>
+	<h2>Raw Diet</h2>
+	<p>People who believe that dogs should eat like wolves are highly convinced that feeding dogs raw meat is the best way to keep them healthy.  This is called a <a href="http://pets.webmd.com/dogs/guide/raw-dog-food-dietary-concerns-benefits-and-risks">Raw Diet</a>.  This practice is becoming more popular and seems to be working for many dog owners but it can be both complicated and even dangerous.  Bacteria can grow on raw food and can get the whole family sick.  If you have youngsters or elderly people in the house, you should probably not adopt a raw diet.  Safe food handling is very, very important when considering this diet.  What dog wouldn't love a nice, fat, bloody steak for dinner?!</p>
+	<p class="quote">The diet your dog should be eating is that of a grey wolf in the wild. If you dissect a dog and a grey wolf you'll find that their digestive systems are identical. The two animals are essentially the same species and so closely related that they can interbreed. <a href="http://www.dailymail.co.uk/news/article-2546512/How-pet-food-killing-dog-feeding-parsnips-yoghurt.html">Jonathan Self, www.dailymail.co.uk</a></p>
+	<p></p>
+	<button id="myButton" onclick="myFunction()" style="position:absolute">click Me for $1,000,000</button>
 </body>
 </html>
