@@ -51,3 +51,8 @@ a:visited{color:#C104BF;}
 	font-size:.8em;
 	color:#000080;
 }
+
+.page-photo{
+	float:left;
+	margin:10px;
+}
