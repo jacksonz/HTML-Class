@@ -4,7 +4,7 @@ body{
 	width: 800px;
 	margin: auto;
 	color:black;
-	font-family:tahoma;
+	font-family:Tahoma, Geneva, sans-serif;
 }
 h1{
 	text-shadow: 4px 4px 3px #b80;
@@ -21,8 +21,11 @@ a:visited{color:#C104BF;}
 #menu{
 	float:right;
 	border: 1px solid orange;
+	border-radius:10px;
 	margin: 20px;
-	padding:10px;	
+	padding:10px;
+	width:180px;	
+	letter-spacing:1px;
 }
 #menu ul{
 	list-style-image: url("../images/paw.png");
@@ -35,6 +38,9 @@ a:visited{color:#C104BF;}
 }
 #menu li.current{
 	list-style-image: url("../images/paw-current.png");
+}
+#menu li.current2 a{
+	color:#2FFF23;
 }
 #menu li.current a{
 	color:#00cc00;
