@@ -5,8 +5,14 @@
 <head>
 	
 	<title>dog health</title>
-	<script src="javascript/jquery-1.11.1.min.js"></script>
-	<script src="javascript/global.js"></script>
+	<script src="javascript/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="javascript/global.js" type="text/javascript"></script>
+	<script src="javascript/jQueryRotateCompressed.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	window.setTimeout(function() {
+		$("#dog-question-photo").rotate({animateTo:-8});
+	}, 2000);
+	</script>
 	<link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 
@@ -21,8 +27,8 @@
 		</ul>
 	</div>
 	<h1>Why is dog health important?</h1>
-	<img src="images/dog_question.jpg" class="page-photo" />
-	<p>Dog health is the most important thing in owning a dog.  If your dog isn't healthy, they won't be happy and you won't enjoy owning a sad, depressed or sick dog.  Healthy dogs live longer and cost less to keep healthy.</p>
+	<img src="images/dog_question.jpg" class="page-photo" id="dog-question-photo" />
+	<p style="clear:both;padding-top:25px;">Dog health is the most important thing in owning a dog.  If your dog isn't healthy, they won't be happy and you won't enjoy owning a sad, depressed or sick dog.  Healthy dogs live longer and cost less to keep healthy.</p>
 	<a href="index.html">Go Home</a>
 </body>
 
